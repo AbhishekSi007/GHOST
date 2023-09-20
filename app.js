@@ -62,6 +62,7 @@ recognition.onresult = function(event){
         console.log(input);
         window.open('https://www.youtube.com/watch?v='+input);
      }
+     
      else
      {
         readout("Sorry master but can you speak again");
