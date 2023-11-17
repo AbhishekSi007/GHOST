@@ -12,10 +12,6 @@ recognition.onstart = function(){
     console.log("vr.active");
 };
 
-//sr stop
-recognition.onend = function(){
-    console.log("vr deactivated");
-};
 
 //sr result
 recognition.onresult = function(event){
@@ -60,7 +56,7 @@ recognition.onresult = function(event){
         input.pop();
         input=input.join("").split(" ").join("+");
         console.log(input);
-        window.open('https://www.youtube.com/watch?v='+input);
+        window.open('https://www.youtube.com/results?search_query='+input);
      }
      
      else
@@ -68,6 +64,11 @@ recognition.onresult = function(event){
         readout("Sorry master but can you speak again");
      }
 };
+//sr stop
+recognition.onend = function(){
+    console.log("vr deactivated");
+};
+
 
 //sr continuous
 //recognition.continuous= true;
