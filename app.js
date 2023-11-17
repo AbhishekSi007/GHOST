@@ -66,7 +66,7 @@ recognition.onresult = function(event){
 };
 //sr stop
 recognition.onend = function(){
-    console.log("vr deactivated");
+    console.log("vr.deactivated");
 };
 
 
